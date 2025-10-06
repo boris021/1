@@ -11,7 +11,7 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	font-family: "Mulish", sans-serif;
 	background: #0a0e27;
 	color: #fff;
 	overflow-x: hidden;
@@ -156,6 +156,7 @@ a {
 	align-items: center;
 	justify-content: center;
 	gap: 8px;
+	font-family: "Mulish", sans-serif;
 }
 .btn-login {
 	background: linear-gradient(90deg, #3b82f6 0%, #22d3ee 100%);
@@ -1183,7 +1184,6 @@ a {
 .kometa-why {
 	margin: 40px 0;
 	color: var(--text);
-	font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 .kometa-why .k-title {
 	display: flex;
@@ -1308,7 +1308,6 @@ a {
 	border-radius: 24px;
 	background: radial-gradient(80% 150% at 50% -10%, rgba(62,203,255,.08), transparent 70%), var(--bg);
 	color: var(--text);
-	font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 .kometa-loyalty .wrap {
 	display: flex;
@@ -1391,7 +1390,6 @@ a {
 	--radius:20px;
 	color:var(--text);
 	padding:clamp(24px,3vw,40px) 16px;
-	font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
 }
 .kometa-wins-n-tournament .wrap{
 	margin:0 auto;
@@ -1648,7 +1646,6 @@ a {
 	border: 1px solid rgba(120,170,255,.15);
 	border-radius: 22px;
 	overflow: hidden;
-	font-family: system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
 }
 /* шапка */
 .jp-head{
@@ -1795,15 +1792,6 @@ a {
 	--accent:#3ecbff;
 	--radius:16px;
 	color:var(--text);
-	/* background:var(--bg);
-	*/
-	/* padding:clamp(28px,4vw,44px) 16px;
-	*/
-	font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-	/* border-radius:22px;
-	*/
-	/* border:1px solid rgba(120,170,255,.12);
-	*/
 }
 .providers .head{
 	margin:0 auto 18px;
@@ -2037,165 +2025,11 @@ a {
 	font-weight: 500;
 	font-style: 14px;
 }
-.kometa-footer{
-	--bg:#0b0f1a;
-	--text:#e9f1ff;
-	--muted:#a9c1ff;
-	--accent:#3ecbff;
-	--chip1:#7ae0ff;
-	--chip2:#9fb8ff;
-	--radius:18px;
-	color:var(--text);
-	padding: 0 24px;
-	font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-}
-.kf-wrap{
-	max-width:1340px;
-	margin:0 auto;
-	display:grid;
-	gap:22px;
-	grid-template-columns:320px 1fr;
-}
-/* левая колонка */
-.kf-brand{
-	display:flex;
-	flex-direction:column;
-	gap:18px
-}
-.kf-logo{
-	height:40px;
-	width:auto
-}
-.kf-row{
-	display:flex;
-	align-items:center;
-	gap:12px
-}
-.kf-chip{
-	display:inline-block;
-	padding:10px 16px;
-	font-weight:800;
-	font-size:13px;
-	color:#00131f;
-	text-decoration:none;
-	white-space:nowrap;
-	transition:transform .2s ease, filter .2s ease;
-}
-.kf-chip:hover{
-	transform:translateY(-2px);
-	filter:brightness(1.05)
-}
-.tg-link{
-	width:34px;
-	height:34px;
-	border-radius:50%;
-	display:inline-grid;
-	place-items:center;
-	background:#29a9e0;
-	color:#fff;
-	text-decoration:none;
-	box-shadow:0 6px 16px rgba(41,169,224,.35);
-}
-.tg-link svg{
-	width:16px;
-	height:16px
-}
-/* правый блок ссылок */
-.kf-links{
-	display:grid;
-	gap:16px 24px;
-	grid-template-columns:repeat(3,minmax(220px,1fr));
-	align-content:start;
-}
-.kf-col{
-	display:flex;
-	flex-direction:column;
-	gap:12px
-}
-.kf-link{
-	color:#dbe7ff;
-	text-decoration:none;
-	font-size:14px;
-	opacity:.9;
-	transition:opacity .2s ease, color .2s ease;
-}
-.kf-link:hover{
-	opacity:1;
-	color:#ffffff
-}
-/* адаптив */
-@media (max-width:900px){
-	.kf-wrap{
-		grid-template-columns:1fr
-}
-	.kf-links{
-		grid-template-columns:repeat(2,1fr)
-}
-}
-@media (max-width:560px){
-	.kf-links{
-		grid-template-columns:1fr
-}
-	.kf-row{
-		justify-content:flex-start
-}
-}
-.paybrands{
-	margin: 40px 0;
-	--bg:#0b0f1a;
-	--text:#e9f1ff;
-	--muted:#7f8fb3;
-	padding:clamp(20px,3vw,32px) 16px;
-	font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-}
-.paybrands .wrap{
-	max-width:1400px;
-	margin:0 auto;
-	display:flex;
-	flex-wrap:wrap;
-	gap:clamp(18px,2.8vw,36px);
-	align-items:center;
-	justify-content:space-between;
-}
-.paybrands a.item{
-	display:inline-flex;
-	align-items:center;
-	justify-content:center;
-	height:30px;
-	/* базовая высота логотипа */
-	max-width:60px;
-	filter: grayscale(100%) opacity(.45);
-	transition: filter .25s ease, transform .2s ease;
-	text-decoration:none;
-}
-.paybrands a.item:hover{
-	filter: grayscale(0%) opacity(.95);
-	transform: translateY(-2px);
-}
-.paybrands a.item img{
-	height:100%;
-	width:auto;
-	object-fit:contain;
-	display:block;
-	/* для SVG можно подкорректировать толщину */
-}
-/* компактнее на очень узких экранах */
-@media (max-width:600px){
-	.paybrands a.item{
-		height:28px;
-		min-width:72px;
-	}
-	.paybrands .wrap{
-		justify-content:center;
-	}
-}
-/* белые иконки + полупрозрачность */
-.paybrands a.item img{
-	filter: brightness(0) invert(1);
-	/* превращаем в белый */
-	opacity: .2;
-	/* #fff3 ≈ 0.2 */
-}
+
+
+
+ 
+
 /* ============ MOBILE BOTTOM NAVIGATION ============ */
 .mobile-bottom-nav {
 	display: none;
@@ -2292,4 +2126,12 @@ a {
 	.footer {
 		margin-bottom: 70px;
 	}
+}}
+
+
+
+@media (min-width: 767px) {
+   .mobile-bottom-nav {
+	display: none;
+}
 }
