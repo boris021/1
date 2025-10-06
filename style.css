@@ -1783,140 +1783,17 @@ a {
 .jp-more a:hover{
 	transform:translateY(-3px);
 }
-.providers{
+.kometa-text-block {
 	margin: 40px 0;
-	--bg:#0b0f1a;
-	--card:#0f1524;
-	--text:#e9f1ff;
-	--muted:#a9c1ff;
-	--accent:#3ecbff;
-	--radius:16px;
-	color:var(--text);
+	padding: 24px;
 }
-.providers .head{
-	margin:0 auto 18px;
-	display:flex;
-	align-items:center;
-	gap:14px;
-	justify-content:flex-start;
+.kometa-text-block h1 {
+	margin-bottom: 16px;
 }
-.providers h3{
-	margin:0;
-	font-size:clamp(18px,2.2vw,22px);
-	text-transform:uppercase;
-	letter-spacing:.4px;
-}
-.providers .view-all{
-	font-size:12px;
-	text-transform:uppercase;
-	letter-spacing:.6px;
-	color:#e9f1ffbd;
-	text-decoration:none;
-	border-bottom:1px dashed rgba(233,241,255,.35);
-}
-.providers .view-all:hover{
-	color:#fff;
-	border-color:#fff;
-}
-.providers .grid{
-	margin:0 auto;
-	display:grid;
-	gap:14px;
-	grid-template-columns: repeat(5, minmax(130px,1fr));
-}
-@media (max-width:1100px){
-	.providers .grid{
-		grid-template-columns: repeat(5, 1fr);
-	}
-}
-@media (max-width:900px){
-	.providers .grid{
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
-@media (max-width:680px){
-	.providers .grid{
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-@media (max-width:480px){
-	.providers .grid{
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-.providers .item{
-	position:relative;
-	display:block;
-	height:84px;
-	overflow:hidden;
-	border-radius:var(--radius);
-	background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0)) ,var(--card);
-	border:1px solid rgba(138,180,255,.18);
-	box-shadow: 0 8px 24px rgba(0,0,0,.25) inset;
-	transition: transform .2s ease, border-color .2s ease, box-shadow .25s ease;
-}
-.providers .item:hover{
-	transform: translateY(-4px);
-	border-color: rgba(138,180,255,.35);
-	box-shadow: 0 10px 28px rgba(0,0,0,.45), 0 8px 24px rgba(0,0,0,.25) inset;
-}
-.providers .item img{
-	width: 70%;
-	max-width:180px;
-	height: 60%;
-	object-fit: contain;
-	position:absolute;
-	inset:0;
-	margin:auto;
-	filter: drop-shadow(0 2px 8px rgba(0,0,0,.35));
-}
-/* разделительная линия внизу секции (как в рефе) */
-.providers .bottom-line{
-	max-width:1180px;
-	margin:22px auto 0;
-	height:1px;
-	background:linear-gradient(90deg, transparent, rgba(160,190,255,.28), transparent);
-}
-/* ============ FOOTER ============ */
-.footer {
-	margin-top: 80px;
-}
-.footer-content {
-	max-width: 1400px;
-	margin: 0 auto;
-	padding: 56px 24px;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-	gap: 40px;
-}
-.footer-section h4 {
-	margin-bottom: 20px;
-	font-size: 16px;
-	font-weight: 700;
-}
-.footer-section ul {
-	list-style: none;
-}
-.footer-section li {
-	margin-bottom: 12px;
-}
-.footer-section a {
-	color: rgba(255, 255, 255, 0.6);
-	text-decoration: none;
-	font-size: 14px;
-	transition: color 0.3s;
-}
-.footer-section a:hover {
-	color: #fff;
-}
-.footer-bottom {
-	padding: 28px 24px;
-	text-align: center;
-	color: rgba(255, 255, 255, 0.5);
-	font-size: 14px;
-}
-.footer-bottom p {
-	margin-bottom: 8px;
+.kometa-text-block p {
+	font-style: 16px;
+	font-weight: 400;
+	font-family: "Mulish", sans-serif;
 }
 /* ============ RESPONSIVE ============ */
 @media (max-width: 1024px) {
