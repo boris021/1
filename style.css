@@ -1641,11 +1641,11 @@ a {
 .kometa-jackpot{
 	color: var(--text);
 	padding: clamp(28px,5vw,56px) 16px;
-	/* правильно */
 	background: url("img/bg.webp") center / cover no-repeat;
 	border: 1px solid rgba(120,170,255,.15);
 	border-radius: 22px;
 	overflow: hidden;
+	margin-top: 40px;
 }
 /* шапка */
 .jp-head{
