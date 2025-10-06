@@ -348,6 +348,10 @@
 	 display: flex;
 	 justify-content: space-between;
 }
+		  @media (max-width: 767px) {
+    .content-header {
+       justify-content: flex-start;
+}}
 
         .menu-btn {
             display: none;
@@ -370,6 +374,11 @@
             max-width: 700px;
             position: relative;
         }
+		  
+		  @media (max-width: 767px) {
+    .search-box {
+        display: none;
+}}
 
         .search-input {
             width: 100%;
