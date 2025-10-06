@@ -225,7 +225,7 @@
             color: #fff;
             text-decoration: none;
             transition: all 0.3s;
-            font-size: 14px;
+            font-size: 16px;
             cursor: pointer;
             border-left: 4px solid transparent;
         }
@@ -241,11 +241,39 @@
         }
 
         .nav-icon {
-            font-size: 20px;
-            width: 24px;
-            text-align: center;
-            flex-shrink: 0;
-        }
+    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.nav-item:hover .nav-icon img {
+    opacity: 1;
+}
+
+.nav-item.active .nav-icon img {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+}
+
+/* Для свернутого меню */
+.sidebar.collapsed .nav-icon img {
+    width: 22px;
+    height: 22px;
+}
 
         .btn-telegram {
             margin: 8px 16px;
